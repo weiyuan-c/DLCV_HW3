@@ -60,7 +60,7 @@ if __name__ == '__main__':
         data = json.load(f)
     objects = []
     for i in range(len(data)):
-        objects.append(data[f'{i}'])
+        objects.append(data[str(i)])
 
     prompt_text = [f'This is a photo of a {object}' for object in objects] 
     text_tokens = clip.tokenize(prompt_text).to(device)
