@@ -1,0 +1,1 @@
+python3 p2.py --test_folder $1 --model_weight 'model.pth' --output_file $2 --tokenized_file 'caption_tokenizer.json'
